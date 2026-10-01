@@ -10,9 +10,12 @@ import farmEggs from "@/assets/farm_3.jpg";
 import farmRoosters from "@/assets/farm_4.jpg";
 import process2 from "@/assets/process-2.jpg";
 import process3 from "@/assets/process-3.jpg";
-import pKienyeji from "@/assets/product-kienyeji.jpg";
-import pBroiler from "@/assets/product-broiler.jpg";
-import pEggs from "@/assets/product-eggs.jpg";
+import kienyejiAsset from "@/assets/kienyeji.jpeg.asset.json";
+import broilerAsset from "@/assets/broiler.jpeg.asset.json";
+import eggsAsset from "@/assets/mayai.jpeg.asset.json";
+const pKienyeji = kienyejiAsset.url;
+const pBroiler = broilerAsset.url;
+const pEggs = eggsAsset.url;
 
 export const Route = createFileRoute("/")({
   head: () => ({
