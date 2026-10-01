@@ -180,7 +180,7 @@ function Index() {
           <div className="mt-12 grid gap-8 md:grid-cols-3">
             {products.map((p) => (
               <article key={p.title} className="border border-border bg-card">
-                <img src={p.img} alt={p.title} loading="lazy" className="aspect-square w-full bg-secondary object-contain p-4" />
+                <img src={p.img} alt={p.title} loading="lazy" className="aspect-square w-full bg-background object-contain p-4" />
                 <div className="border-t-4 border-primary p-6">
                   <h3 className="text-lg font-bold">{p.title}</h3>
                   <p className="mt-2 text-sm text-muted-foreground">{p.text}</p>
