@@ -119,7 +119,7 @@ function Index() {
         <img src={farmHero} alt="Mella's Farm poultry house" className="h-[560px] w-full object-cover" />
         <div className="absolute inset-0 bg-secondary/65" />
         <div className="absolute inset-0 flex items-center">
-          <div className="mx-auto max-w-6xl px-4 text-secondary-foreground">
+          <div className="mx-auto w-full max-w-6xl px-4 text-secondary-foreground">
             <p className="mb-3 font-heading text-sm font-semibold uppercase tracking-[0.2em] text-primary">Mella's Farm – Dar es Salaam</p>
             <h1 className="max-w-2xl text-4xl font-bold leading-tight md:text-5xl">
               Supplying healthy chicken and fresh eggs to Tanzanian families
