@@ -11,7 +11,7 @@ import farmRoosters from "@/assets/farm_4.jpg";
 import process2 from "@/assets/process-2.jpg";
 import process3 from "@/assets/process-3.jpg";
 import kienyejiAsset from "@/assets/kienyeji.jpeg.asset.json";
-import broilerAsset from "@/assets/broiler.jpeg.asset.json";
+import broilerAsset from "@/assets/broiler-2.jpeg.asset.json";
 import eggsAsset from "@/assets/mayai.jpeg.asset.json";
 import heroAsset from "@/assets/hero-farm.jpeg.asset.json";
 const pKienyeji = kienyejiAsset.url;
