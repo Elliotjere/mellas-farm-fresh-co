@@ -10,9 +10,12 @@ import farmEggs from "@/assets/farm_3.jpg";
 import farmRoosters from "@/assets/farm_4.jpg";
 import process2 from "@/assets/process-2.jpg";
 import process3 from "@/assets/process-3.jpg";
-import pKienyeji from "@/assets/product-kienyeji.jpg";
-import pBroiler from "@/assets/product-broiler.jpg";
-import pEggs from "@/assets/product-eggs.jpg";
+import kienyejiAsset from "@/assets/kienyeji.jpeg.asset.json";
+import broilerAsset from "@/assets/broiler.jpeg.asset.json";
+import eggsAsset from "@/assets/mayai.jpeg.asset.json";
+const pKienyeji = kienyejiAsset.url;
+const pBroiler = broilerAsset.url;
+const pEggs = eggsAsset.url;
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -177,7 +180,7 @@ function Index() {
           <div className="mt-12 grid gap-8 md:grid-cols-3">
             {products.map((p) => (
               <article key={p.title} className="border border-border bg-card">
-                <img src={p.img} alt={p.title} loading="lazy" width={1024} height={1024} className="aspect-square w-full object-cover" />
+                <img src={p.img} alt={p.title} loading="lazy" className="aspect-square w-full bg-secondary object-contain p-4" />
                 <div className="border-t-4 border-primary p-6">
                   <h3 className="text-lg font-bold">{p.title}</h3>
                   <p className="mt-2 text-sm text-muted-foreground">{p.text}</p>
