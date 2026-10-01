@@ -13,6 +13,7 @@ import process3 from "@/assets/process-3.jpg";
 import kienyejiAsset from "@/assets/kienyeji.jpeg.asset.json";
 import broilerAsset from "@/assets/broiler.jpeg.asset.json";
 import eggsAsset from "@/assets/mayai.jpeg.asset.json";
+import heroAsset from "@/assets/hero-farm.jpeg.asset.json";
 const pKienyeji = kienyejiAsset.url;
 const pBroiler = broilerAsset.url;
 const pEggs = eggsAsset.url;
@@ -119,7 +120,7 @@ function Index() {
 
       {/* Hero */}
       <section id="home" className="relative">
-        <img src={farmHero} alt="Mella's Farm poultry house" className="h-[560px] w-full object-cover" />
+        <img src={heroAsset.url} alt="Mella's Farm poultry house" fetchPriority="high" decoding="async" className="h-[560px] w-full object-cover" />
         <div className="absolute inset-0 bg-secondary/65" />
         <div className="absolute inset-0 flex items-center">
           <div className="mx-auto w-full max-w-6xl px-4 text-secondary-foreground">
